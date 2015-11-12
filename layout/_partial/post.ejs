@@ -1,0 +1,17 @@
+<article class="content" id="<%= post.slug %>">
+  <header>
+    <% if(link_title) { %>
+      <a href="<%= url_for(post.path) %>">
+    <% } %>
+    <h1 class="title"><%- post.title %></h1>
+    <% if(link_title) { %>
+      </a>
+    <% } %>
+    <p style="margin-bottom: 0;">
+      <em id="written-by">Written by <%- post.author %></em>
+      <br />
+      <em id="published-on">Published on <%= post.date.format("DD MMMM YYYY") %></em>
+    </p>
+  </header>
+  <%- post.content %>
+</article>

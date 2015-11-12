@@ -1,0 +1,18 @@
+ol .marginnote, ul .marginnote, ol .sidenote, ul .sidenote { margin-right: -77.7%; }
+ul { list-style-type: inherit; }
+
+ol { width: 45%; }
+
+li > p, li > ul { width: initial; }
+li, li > p { margin-bottom: 0; margin-top: 0; }
+
+h1.title { width: 60%; }
+@media (max-width: 760px) { h1.title { width: 95%; } }
+
+pre { overflow-x: auto; }
+
+code { font-family: Source Code Pro, monospace; }
+
+article {
+    counter-reset: sidenote-counter;
+}
