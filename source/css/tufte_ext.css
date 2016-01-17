@@ -18,3 +18,7 @@ p > code { font-size: 1.1rem; }
 article {
     counter-reset: sidenote-counter;
 }
+
+.sidenote, .marginnote {
+    font-size: 1.2rem;
+}
