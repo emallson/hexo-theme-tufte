@@ -9,7 +9,5 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "highlight.js": "^8.8.0",
-    "jsdom": "^3.1.2"
   }
 }

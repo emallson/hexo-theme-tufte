@@ -1,5 +1,4 @@
-var jsdom = require('jsdom'),
-    crypto = require('crypto'),
+var crypto = require('crypto'),
     util = require('util');
 
 hexo.extend.tag.register('sidenote', function(args, content) {
