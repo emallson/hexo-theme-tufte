@@ -13,6 +13,8 @@ pre { overflow-x: auto; }
 
 code { font-family: Source Code Pro, monospace; }
 
+p > code { font-size: 1.1rem; }
+
 article {
     counter-reset: sidenote-counter;
 }
