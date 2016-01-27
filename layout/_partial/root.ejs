@@ -3,14 +3,16 @@
   <head>
     <title><%= title %></title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="author" content="J David Smith">
+    <% if(config.author) { %>
+    <meta name="author" content="<%= config.author %>">
+    <% } %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="<%= config.root + 'css/tufte.css'%>">
     <link rel="stylesheet" type="text/css" href="<%= config.root + 'css/tufte_ext.css'%>">
     <link rel="stylesheet" type="text/css" href="<%= config.root + 'css/solarized_light.css'%>">
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    <link rel="alternate" type="application/atom+xml"
-      title="Record of Motion" href="<%= config.root + 'atom.xml' %>" />
+    <link rel="alternate" type="application/<%= config.feed.type %>+xml"
+      title="<%= config.title %>" href="<%= url_for(config.feed.path) %>" />
   </head>
   <body>
     <%- partial('_partial/header') %>

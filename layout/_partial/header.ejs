@@ -1,3 +1,5 @@
 <header>
-  <a href="https://atlanis.net/">Home</a> &middot; <a href="<%= config.root %>">Blog</a> &middot; <a href="<%= url_for(config.feed.path) %>">Atom Feed</a>
+  <% if(config.home) { %><a href="<%= config.home %>">Home</a> &middot;<% } %>
+  <a href="<%= config.root %>">Blog</a> &middot;
+  <a href="<%= url_for(config.feed.path) %>">Atom Feed</a>
 </header>
