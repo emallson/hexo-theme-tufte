@@ -1,5 +1,8 @@
 <header>
   <% if(config.home) { %><a href="<%= config.home %>">Home</a> &middot;<% } %>
-  <a href="<%= config.root %>">Blog</a> &middot;
-  <a href="<%= url_for(config.feed.path) %>">Atom Feed</a>
+  <a href="<%= config.root %>">Blog</a>
+  <% if(config.feed) { %>
+  &middot;
+  <a href="<%= url_for(config.feed.path) %>"><%= (config.feed.type == "atom") ? "Atom" : "RSS" %> Feed</a>
+  <% } %>
 </header>
